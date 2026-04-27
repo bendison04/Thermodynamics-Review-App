@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="MCEN 3012 Thermodynamics study quiz — 41 multiple-choice questions drawn from past exams and homework rubrics.">
+<title>MCEN 3012 · Thermodynamics Quiz</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <div class="eyebrow">MCEN 3012 · Study Tool</div>
+    <h1>Thermodynamics <em>Quiz</em></h1>
+    <p class="subtitle">41 questions drawn from past exams and homework</p>
+  </header>
+
+  <div class="filters" id="filters">
+    <span class="filter-label">Filter:</span>
+    <button class="filter-chip active" data-filter="all">all topics</button>
+    <button class="filter-chip" data-filter="state">state changes</button>
+    <button class="filter-chip" data-filter="entropy">entropy &amp; 2nd law</button>
+    <button class="filter-chip" data-filter="ideal-gas">ideal gas</button>
+    <button class="filter-chip" data-filter="energy">energy balance</button>
+    <button class="filter-chip" data-filter="cycles">cycles &amp; devices</button>
+  </div>
+
+  <div class="stats-bar">
+    <div class="stat">
+      <div class="stat-label">Question</div>
+      <div class="stat-value">
+        <span id="current-num">1</span><span class="denom">/<span id="total-num">1</span></span>
+      </div>
+    </div>
+    <div class="stat">
+      <div class="stat-label">Correct</div>
+      <div class="stat-value" id="score-display">0</div>
+    </div>
+    <div class="stat">
+      <div class="stat-label">Accuracy</div>
+      <div class="stat-value" id="accuracy-display">—</div>
+    </div>
+  </div>
+
+  <div class="progress-track">
+    <div class="progress-fill" id="progress-fill" style="width: 0%"></div>
+  </div>
+
+  <div id="quiz-area"></div>
+
+</div>
+
+<footer>
+  MCEN 3012 · Old Exam 2, Old Final, Homework 6
+</footer>
+
+<script src="js/diagrams.js"></script>
+<script src="js/questions.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
